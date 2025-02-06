@@ -66,5 +66,3 @@ john hash2.txt --format=rar5 --wordlist=wordlist.test
 
 ## Conclusion
 This project demonstrates a common **password recovery scenario** using **John the Ripper** and **custom wordlists**. It highlights how attackers can crack weak passwords and reinforces the importance of using **strong, unique passwords**.
-
-![Conclusion](images/conclusion.png)
