@@ -41,7 +41,7 @@ john --show hash.txt
 ### Step 3: Extracting a Custom Wordlist
 After extracting the contents of `FILE1.rar`, a text file containing multiple words was found. These words were saved in **wordlist.test**, which was then used to crack the next file.
 
-![image](https://github.com/user-attachments/assets/40138955-d9cb-4b8d-b6f8-7adb6a055a22)
+
 
 
 ### Step 4: Extracting Hash from FILE2.rar
@@ -57,6 +57,7 @@ Using John the Ripper with the **custom wordlist (wordlist.test)**:
 ```bash
 john hash2.txt --format=rar5 --wordlist=wordlist.test
 ```
+![image](https://github.com/user-attachments/assets/40138955-d9cb-4b8d-b6f8-7adb6a055a22)
 
 ✅ **Result:** The password for `FILE2.rar` was found: **Str0ngP@55w0rd**
 
