@@ -18,7 +18,9 @@ The first step is extracting the password hash from the RAR archive using `rar2j
 rar2john FILE1.rar > hash.txt
 ```
 
-![Extracting Hash](images/extracting_hash.png)
+![image](https://github.com/user-attachments/assets/0bbc50e9-0c51-47e2-b934-d88448cc4d0c)
+
+
 
 ### Step 2: Cracking FILE1.rar Password
 Using John the Ripper with the **rockyou.txt** wordlist to crack the password:
@@ -27,7 +29,8 @@ Using John the Ripper with the **rockyou.txt** wordlist to crack the password:
 john hash.txt --format=rar5 --wordlist=/usr/share/wordlists/rockyou.txt
 ```
 
-![Cracking Password](images/cracking_password.png)
+![image](https://github.com/user-attachments/assets/88e38e2f-a4b7-47b8-874c-6afbab874e26)
+
 
 To display the cracked password:
 
@@ -40,7 +43,8 @@ john --show hash.txt
 ### Step 3: Extracting a Custom Wordlist
 After extracting the contents of `FILE1.rar`, a text file containing multiple words was found. These words were saved in **wordlist.test**, which was then used to crack the next file.
 
-![Extracted Wordlist](images/extracted_wordlist.png)
+![image](https://github.com/user-attachments/assets/40138955-d9cb-4b8d-b6f8-7adb6a055a22)
+
 
 ### Step 4: Extracting Hash from FILE2.rar
 Similarly, the hash for `FILE2.rar` was extracted:
@@ -57,8 +61,6 @@ Using John the Ripper with the **custom wordlist (wordlist.test)**:
 ```bash
 john hash2.txt --format=rar5 --wordlist=wordlist.test
 ```
-
-![Cracking Second Password](images/cracking_second_password.png)
 
 ✅ **Result:** The password for `FILE2.rar` was found: **Str0ngP@55w0rd**
 
