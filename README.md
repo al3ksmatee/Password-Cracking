@@ -53,8 +53,6 @@ Similarly, the hash for `FILE2.rar` was extracted:
 rar2john FILE2.rar > hash2.txt
 ```
 
-![Extracting Second Hash](images/extracting_second_hash.png)
-
 ### Step 5: Cracking FILE2.rar Password
 Using John the Ripper with the **custom wordlist (wordlist.test)**:
 
